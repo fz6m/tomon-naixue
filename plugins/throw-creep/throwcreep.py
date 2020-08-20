@@ -52,7 +52,7 @@ class ThrowAndCreep():
             return f'{RESOURCES_BASE_PATH}/不爬.jpg'
 
         res = await cls.getAvatar(avatar_img_url)
-        avatar = Image.open(BytesIO(res)).convert('RGBA')
+        avatar = Image.open(BytesIO(res)).convert('RGBA').resize((640, 640), Image.ANTIALIAS)
         avatar = cls.get_circle_avatar(avatar, 100)
 
         creep_img = Image.open(f'{RESOURCES_BASE_PATH}/pa/爬{id}.jpg').convert('RGBA')
@@ -69,7 +69,7 @@ class ThrowAndCreep():
         throwed_who = qq
 
         res = await cls.getAvatar(avatar_img_url)
-        avatar = Image.open(BytesIO(res)).convert('RGBA')
+        avatar = Image.open(BytesIO(res)).convert('RGBA').resize((640, 640), Image.ANTIALIAS)
         avatar = cls.get_circle_avatar(avatar, cls._avatar_size)
 
         rotate_angel = random.randrange(0, 360)
