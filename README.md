@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src = 'https://cdn.jsdelivr.net/gh/fz6m/Private-picgo@moe/img/20200821030322.JPG' width = '150px' style = "border-radius: 50%!important;" />
+
+<img src = 'https://cdn.jsdelivr.net/gh/fz6m/Private-picgo@moe/img/20200821032755.png' width = '150px' />
 
 # naixue-bot
 
